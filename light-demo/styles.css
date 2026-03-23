@@ -1,0 +1,136 @@
+/* example light-mode layout — the opposite of the dark mode example */
+
+/* import a font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* create variables for colors */
+:root {
+    --fore-color: #444;
+    --back-color: #eee;
+    --bright-color: #000;
+}
+
+/* set padding, font, and basic background and text colors */
+body {
+    padding: 1em;
+    font-family: "Noto Sans", sans-serif;
+    background-color: var(--back-color);
+    color: var(--fore-color);
+}
+
+/* set the major elements to a max width of 1100px, centered with auto side margins */
+header,
+main, 
+footer {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* make the header full height and use flexbox in column direction to stack child elements at the bottom */
+header {
+    height: calc(100vh - var(--nav-height) ); /* referencing a variable from the default CSS stylesheet */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--fore-color);
+    margin-bottom: 2em;
+}
+
+/* header h1 text styling -- uses CSS clamp() function to define smallest, midrange, and largest values */
+header h1 {
+    font-size: clamp(2rem, 8vw, 6rem); 
+    line-height: clamp(2.5rem, 8.5vw, 6.25rem);
+    text-transform: uppercase;
+    word-spacing: 100vw; /* force linebreak after each word */
+    color: var(--bright-color);
+}
+
+/* make the header subtext smaller and full width */
+header p {
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+/* baseline font size and line spacing */
+main p,
+main li {
+    font-size: 1.0em;
+    line-height: 1.7em;
+} 
+
+/* indent the first line of each paragraph */
+main p {
+    text-indent: 2em;
+}
+
+/* target first p that is an immediate child of main to be italic and bold */
+main > p:nth-of-type(1) { 
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* JS is moving the aside block elsewhere; here it is styled here with a border and extra padding/margin */
+aside {
+    border-top: 1px solid var(--fore-color);
+    padding-top: 1rem;
+    margin-top: 10rem;
+}
+
+/* JS is inserting a new h2 headline into the aside block, so let's style it */
+aside h2 {
+    margin: 1em 0 0.5em 0;
+    color: var(--bright-color);
+    text-transform: uppercase;
+}
+
+/* eliminate the margin on the first paragraph inside the aside tag -- most visible in 2 columns, see @media query */
+aside > p:first-of-type {
+    margin-top: 0;
+}
+
+/* add more padding to list items, except for the last item */
+main li { padding-bottom: 1em; }
+main li:last-child { padding-bottom: 0; }
+
+/* change the color of the strong items in the list */
+main li strong {
+    color: var(--bright-color);
+}
+
+/* style the footer block with border, color, and spacing */
+footer {
+    font-size: 0.75rem;
+    border-top: 1px solid var(--fore-color);
+    padding-top: 1rem;
+    margin-top: 10rem;
+}
+
+/* on wider screens, make the overall font sizes larger, add more space, and split aside into two columns */
+@media screen and (min-width: 768px) {
+    
+    main p,
+    main li {
+        font-size: 1.1em;
+        line-height: 2em;
+    } 
+
+    main p {
+        margin-top: 0.5em;
+    }
+
+    aside {
+        columns: 2;
+    }
+
+    /* when aside is two columns, make its h2 (added by JS) span both columns */
+    aside h2 {
+        column-span: all;
+    }
+
+    /* when aside is two columns, don't let its list item blocks break across columns */
+    aside li {
+        break-inside: avoid-column;
+    }
+
+}
