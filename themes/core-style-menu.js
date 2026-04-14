@@ -10,5 +10,9 @@
     {
         "label":"Light Serif",
         "path":"light-demo"
+    },
+    {
+        "label":"Some Code",
+        "path":"some-code"
     }
 ]
