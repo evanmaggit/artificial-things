@@ -6,4 +6,4 @@
 
 <p><strong>Description:</strong></p>
 
-<p> [Change description here] </p>
+<p> Theme turns all text into random cat </p>
