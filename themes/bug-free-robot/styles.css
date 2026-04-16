@@ -1,0 +1,61 @@
+/* 
+
+bug-free-robot CSS - like wearing nothing at all 
+
+*/
+
+/*font imported wandwritten look*/
+@import url('https://fonts.googleapis.com/css2?family=Felipa&family=Passion+One:wght@400;700;900&display=swap');
+/*header font*/
+@import url('https://fonts.googleapis.com/css2?family=Felipa&family=Germania+One&family=Passion+One:wght@400;700;900&display=swap');
+
+body {
+    padding: 1rem;
+    font-family: "times new roman", serif;
+    background-color: rgb(219, 216, 195);
+    background-image: linear-gradient(rgba(233, 228, 205, 0.5), rgba(233, 229, 210, 0.5)), url(images/360_F_525153525_3tVDBbD5fbMu6LMZbheSBB5pH1YbXJjW.jpg);
+
+}
+
+header {
+    grid-area: title;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 15em;
+    border-bottom: 1px solid black;
+}
+
+main {
+    margin: 3em;
+    grid-area: content;
+    font-family: "Felipa", serif;
+    font-size: 1.5rem;
+    margin-top: 5em;
+}
+
+footer {
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 1.5em;
+    margin-bottom: 4rem;
+    margin-top: 6em;
+    border-top: 1px solid black;
+ } 
+
+ h1 {
+    font-size: 7rem;
+    font-family: "Germania One", system-ui;
+ }
+
+ header p {
+    font-size: 1.5em;
+    text-align: left;
+    margin-left: 1.8em;
+    margin-right: 1.8em;
+    margin-top: 6em;
+ }
+
+ ul {
+    font-family: "times new roman", serif;
+ }
