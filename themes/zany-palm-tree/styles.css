@@ -1,10 +1,51 @@
-/* 
-
-Default CSS - like wearing nothing at all 
-
-*/
-
 body {
+    padding: 2rem;
+    font-family: "Trebuchet MS", sans-serif;
+    background: linear-gradient(to bottom, #87ceeb, #ffeaa7);
+    color: #2d3436;
+}
+
+/* Header stuff*/
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00b894;
+    text-shadow: 2px 2px #ffeaa7;
+}
+
+header p {
+    font-style: italic;
+}
+
+/* Paragraph stuff */
+p {
+    max-width: 700px;
+    margin: 1rem auto;
+    line-height: 1.7;
+}
+
+/* the jist is to make it look like a card */
+aside {
+    background: rgba(255, 255, 255, 0.6);
     padding: 1rem;
-    font-family: Arial, sans-serif
+    border-left: 6px solid #00b894;
+    margin: 2rem auto;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+/* List stuff */
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer stuff */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
 }
