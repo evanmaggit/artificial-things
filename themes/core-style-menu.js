@@ -18,5 +18,9 @@
     {
         "label":"Cat",
         "path":"fearless-kitten"
+    },
+    {
+        "label":"Zany Palm Tree",
+        "path":"zany-palm-tree"
     }
 ]
