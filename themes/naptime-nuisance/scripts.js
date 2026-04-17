@@ -52,6 +52,19 @@ export function initializePage() {
         //how much needs to be visible before enter trigger
         threshold: 0.15
     });
+    
+    const contentObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    mainObserver.observe(mainBox);
 
     revealItems.forEach(function(item) {
         observer.observe(item);
