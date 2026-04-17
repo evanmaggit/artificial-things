@@ -6,4 +6,4 @@
 
 <p><strong>Description:</strong></p>
 
-<p>This layout has only two modifications: padding around the body tag and font family change.</p>
+<p>changed font to courier and moved the header footer and main tag into article tag and used css grid to format into the website</p>
