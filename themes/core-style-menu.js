@@ -26,6 +26,9 @@
     {
         "label":"Bug Free Robot",
         "path":"bug-free-robot"
-    }
-
+    },
+    {
+        "label":"Naptime Nuisance",
+        "path": "naptime-nuisance"
+    },
 ]
