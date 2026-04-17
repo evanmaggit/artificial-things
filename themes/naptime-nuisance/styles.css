@@ -3,7 +3,7 @@
 Naptime Nuisance - For when you really want to make 11 people really annoyed at you, but you want to pretend that you're being helpful while doing it.
 
 */
-
+*/ skeleton for what I want for the theme in terms of color and presentation
 body {
     font-family: 'Times New Roman', Times, serif;
     padding: 1rem;
@@ -32,6 +32,11 @@ nav a {
     color: rgba(189, 246, 255, 1);
     text-decoration: none;
     transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    color: rgba(189, 246, 255, 0.7);
+    text-shadow: 0 0 8px rgba(180, 220, 225, 0.6);
 }
 
 header {
