@@ -1,6 +1,6 @@
 /* 
 
-Default CSS - like wearing nothing at all 
+Curly Goggles CSS - turquoise theme
 
 */
 
@@ -12,14 +12,31 @@ body {
 header{
     font-size: 2rem;
     text-align: center;
-    background-color: #dcfaf6;
-    border: solid;
-    border-color: #dcfaf6;
+    border: solid .2em;
+    border-color: #067971;
     border-radius: 2em;
     color:#52180f;
+    height: 8em;
+    
 }
 
 main{
     color:#255752;
+}
 
+main ul{
+    border: solid 3px;
+    border-radius: 2em;
+    border-color:067971;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+
+}
+
+footer{
+    color: #067971;
 }

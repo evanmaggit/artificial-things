@@ -15,4 +15,12 @@ export function initializePage() {
     // call main function that outputs message to console and update page title
     confirmTheme("Curly Goggles");
 
+    let articleNew = document.createElement("article");
+    document.body.append(articleNew);
+
+    //let header = document.querySelector("header");
+    let main = document.querySelector("main");
+    let footer = document.querySelector("footer");
+
+    articleNew.append(main, footer);
 }

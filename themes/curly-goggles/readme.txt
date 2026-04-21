@@ -4,6 +4,6 @@
 
 <p><strong>Layout path:</strong>curly-goggles</p>
 
-<p><strong>Description: turquoise theme</strong></p>
+<p><strong>Description: </strong></p>
 
-<p>This layout has only one modification: padding around the body tag.</p>
+<p>turquoise theme, added grid and some other text</p>
