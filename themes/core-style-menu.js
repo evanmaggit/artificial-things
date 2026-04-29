@@ -28,12 +28,11 @@
         "path":"bug-free-robot"
     },
     {
-        "label":"Naptime Nuisance",
-        "path":"naptime-nuisance"
-    },
-    {
         "label":"Black Pink",
         "path":"black-pink"
+    },
+    {
+        "label":"Naptime Nuisance",
+        "path":"naptime-nuisance"
     }
-
 ]
