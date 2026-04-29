@@ -29,8 +29,9 @@
     },
     {
         "label":"Naptime Nuisance",
-        "path": "naptime-nuisance"
+        "path":"naptime-nuisance"
     },
+    {
         "label":"Black Pink",
         "path":"black-pink"
     }
