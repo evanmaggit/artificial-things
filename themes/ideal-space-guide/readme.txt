@@ -2,8 +2,8 @@
 
 <p><strong>Layout name:</strong> Ideal Space Guide</p>
 
-<p><strong>Layout path:</strong> Ideal Space Guide</p>
+<p><strong>Layout path:</strong> ideal-space-guide</p>
 
 <p><strong>Description:</strong></p>
 
-<p>Changed it all to Arial and Helvetica to make it more modern.</p>
+<p>I changed the fonts to Arial and Helvetica to make it more modern.</p>
