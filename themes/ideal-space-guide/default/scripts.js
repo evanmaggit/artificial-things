@@ -1,6 +1,6 @@
 /* 
 
-Default JavaScript 
+Ideal Space Guide JavaScript
 
 Instead of document.addEventListener() with DOMContentLoaded, put your initialization code inside the "initalize()" function.
 Make sure its starting line is "export function initializePage() {" and leave in the first console log message.
@@ -14,5 +14,14 @@ export function initializePage() {
 
     // call main function that outputs message to console and update page title
     confirmTheme("?style=ideal-space-guide");
+
+     let newArticle = document.createElement("article");
+    document.body.append(newArticle);
+
+    let header = document.querySelector("header");
+    let main = document.querySelector("main");
+    let footer = document.querySelector("footer");
+
+    newArticle.append(header, main, footer);
 
 }
